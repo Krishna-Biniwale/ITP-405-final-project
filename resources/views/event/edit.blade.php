@@ -9,7 +9,6 @@
         <form method="post" action="{{ route('event.update', $event->id) }}" class="border rounded p-4 shadow-sm bg-light">
             @csrf
             @method('PUT')
-            <p>{{ $event->id }}</p>
             <div class="mb-3">
                 <label for="title" class="form-label">Title</label>
                 <input type="text" id="title" name="title" class="form-control" value="{{ $event->title }}">
